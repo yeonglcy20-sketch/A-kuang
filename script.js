@@ -61,7 +61,7 @@ function render(items){
     div.className='item';
 
     div.innerHTML=
-      `<div class="item-title">🪼 ${title}</div>`+
+      `<div class="item-title">🤍 ${title}</div>`+
       visibleRows.map(([k,v])=>
         `<div class="item-row"><b>${k}</b> : ${v}</div>`
       ).join('');
