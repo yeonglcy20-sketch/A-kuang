@@ -1,2 +1,12 @@
-character.png 파일명을 유지한 채 아쾅 캐릭터 이미지를 업로드하면 메인 화면에 표시됩니다.
-GitHub Pages에 index.html, style.css, script.js, character.png 업로드하세요.
+아쾅(AKuang) GitHub Pages 테마입니다.
+
+사용 방법:
+1. 이 압축파일을 풀어 GitHub 저장소에 업로드하세요.
+2. 아쾅 캐릭터 이미지를 character.png 이름으로 같은 폴더에 넣으세요.
+3. GitHub Pages를 활성화하세요.
+
+기능:
+- 구글 스프레드시트 '시트1' 연동
+- 검색 기능
+- 0 또는 빈칸은 표시하지 않음
+- 모든 값이 0/빈칸인 행은 카드 자체를 숨김

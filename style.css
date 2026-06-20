@@ -1,4 +1,3 @@
-
 body{
 margin:0;
 font-family:'Segoe UI',sans-serif;
@@ -48,7 +47,9 @@ font-size:18px;
 background:rgba(255,255,255,.15);
 color:white;
 backdrop-filter:blur(10px);
+box-sizing:border-box;
 }
+#searchInput::placeholder{color:rgba(255,255,255,.75)}
 .card-list{
 max-width:1200px;
 margin:auto;
@@ -65,9 +66,7 @@ border-radius:20px;
 padding:20px;
 transition:.2s;
 }
-.item:hover{
-transform:translateY(-4px);
-}
+.item:hover{transform:translateY(-4px)}
 .item-title{
 font-size:22px;
 font-weight:bold;
@@ -77,4 +76,16 @@ color:#b6f4ff;
 .item-row{
 margin:5px 0;
 color:#eefcff;
+}
+.empty{
+grid-column:1/-1;
+text-align:center;
+padding:40px;
+color:#d7f8ff;
+}
+@media(max-width:700px){
+.hero{padding:28px 20px;flex-direction:column;text-align:center}
+.hero h1{font-size:44px}
+.character{width:240px;max-width:80vw}
+.search-box,.card-list{padding-left:20px;padding-right:20px}
 }
