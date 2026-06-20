@@ -14,7 +14,7 @@ fetch(csvUrl)
   render(data);
 })
 .catch(err=>{
-  listEl.innerHTML='<div class="empty">데이터를 불러오지 못했습니다.</div>';
+  listEl.innerHTML='<div class="empty">업보 리스트를 불러오지 못했습니다.</div>';
   console.error(err);
 });
 
@@ -61,7 +61,7 @@ function render(items){
     div.className='item';
 
     div.innerHTML=
-      `<div class="item-title">🤍 ${title}</div>`+
+      `<div class="item-title">${title}</div>`+
       visibleRows.map(([k,v])=>
         `<div class="item-row"><b>${k}</b> : ${v}</div>`
       ).join('');
@@ -71,7 +71,7 @@ function render(items){
   });
 
   if(visibleCount===0){
-    listEl.innerHTML='<div class="empty">표시할 데이터가 없습니다.</div>';
+    listEl.innerHTML='<div class="empty">표시할 업보가 없습니다.</div>';
   }
 }
 
