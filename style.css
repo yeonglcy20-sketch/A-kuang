@@ -1,0 +1,8 @@
+body{margin:0;font-family:Arial,sans-serif;background:#f7f7f7}
+.wrap{max-width:900px;margin:40px auto;padding:20px}
+h1{text-align:center}
+#searchInput{width:100%;padding:14px;font-size:16px;margin-bottom:20px;box-sizing:border-box}
+.list{display:grid;gap:12px}
+.item{background:white;padding:16px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+.item-title{font-weight:bold;font-size:18px;margin-bottom:8px}
+.item-row{color:#555;margin:4px 0}
