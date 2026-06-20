@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>스프레드시트 리스트</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>아쾅(AKuang) 심해 기록소</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <h1>리스트</h1>
-    <input id="searchInput" type="text" placeholder="검색어 입력" />
-    <div id="list" class="list"></div>
-  </div>
-  <script src="script.js"></script>
+<div class="bg"></div>
+
+<header class="hero">
+    <div class="hero-text">
+        <h1>🪼 AKuang</h1>
+        <p>심해에서 떠오른 해파리 스트리머</p>
+    </div>
+    <img src="character.png" alt="아쾅 캐릭터" class="character">
+</header>
+
+<section class="search-box">
+    <input id="searchInput" type="text" placeholder="기억 조각 검색...">
+</section>
+
+<section id="list" class="card-list"></section>
+
+<script src="script.js"></script>
 </body>
 </html>
