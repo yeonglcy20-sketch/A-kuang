@@ -7,22 +7,28 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="bg"></div>
+<div class="sea-scene" aria-hidden="true">
+<i class="sea-bubble" style="--x:4%;--size:12px;--duration:23s;--delay:-0s"></i>
+<i class="sea-bubble" style="--x:12%;--size:7px;--duration:29s;--delay:-3s"></i>
+<i class="sea-bubble" style="--x:24%;--size:16px;--duration:31s;--delay:-6s"></i>
+<i class="sea-bubble" style="--x:35%;--size:6px;--duration:21s;--delay:-9s"></i>
+<i class="sea-bubble" style="--x:48%;--size:10px;--duration:27s;--delay:-12s"></i>
+<i class="sea-bubble" style="--x:59%;--size:5px;--duration:24s;--delay:-15s"></i>
+<i class="sea-bubble" style="--x:70%;--size:14px;--duration:32s;--delay:-18s"></i>
+<i class="sea-bubble" style="--x:82%;--size:8px;--duration:26s;--delay:-21s"></i>
+<i class="sea-bubble" style="--x:94%;--size:18px;--duration:34s;--delay:-24s"></i>
+<div class="sea-floor"><svg viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#021b29" d="M0 115 Q170 70 330 120 T700 115 T1100 125 T1440 90 V150 H0Z"/><g fill="none" stroke="#031f2d" stroke-width="12" stroke-linecap="round"><path d="M40 150 Q75 100 45 55 T55 0 M70 150 Q110 110 85 70 M1400 150 Q1360 90 1390 40 M1370 150 Q1320 110 1345 60 M120 150 Q160 120 145 95 M1300 150 Q1260 125 1275 105"/></g></svg></div>
+</div>
 
-<header class="hero">
-  <div class="hero-text">
-    <h1>🪼 AKuang</h1>
-    <p>심해에서 떠오른 해파리 스트리머</p>
-  </div>
-  <img src="character.png" alt="아쾅 캐릭터" class="character">
-</header>
-
-<section class="search-box">
-  <input id="searchInput" type="text" placeholder="기억 조각 검색...">
-</section>
-
-<section id="list" class="card-list"></section>
-
+<div class="container">
+  <header class="hero">
+    <div><h1><img class="header-jelly" src="jellyfish.png" alt="해파리 캐릭터"> <span>AKuang</span></h1><p class="subtitle">심해에서 떠오른 해파리 스트리머</p></div>
+    <img class="sea-logo" src="character.png" alt="심심한 심해의 아쾅 AKUANG">
+  </header>
+  <input id="searchInput" type="search" placeholder="기억 조각 검색..." aria-label="닉네임 또는 업보 검색">
+  <section id="list" class="card-list" aria-label="업보 목록"></section>
+  <footer class="sea-caption">깊은 바다에 모인 기억 조각들</footer>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
